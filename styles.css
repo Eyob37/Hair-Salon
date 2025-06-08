@@ -1,0 +1,207 @@
+body {
+  font-family: 'Noto Sans Ethiopic', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  padding: 20px;  
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.service-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.service {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background: #45a049;
+}
+.ak{
+    background: yellow;
+}
+#selectedService{
+    margin: 5px;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  color: #ddd;
+}
+
+/* Order List Specific Styles */
+.header-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.orders-container {
+  margin-top: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.order-services {
+  margin: 15px 0;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.order-total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.order-customer {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.danger {
+  background: #f44336;
+}
+
+.danger:hover {
+  background: #d32f2f;
+}
+
+#noOrders {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}

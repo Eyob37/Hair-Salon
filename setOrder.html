@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ትዕዛዝ ያስገቡ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ትዕዛዝ ያስገቡ</h1>
+    <a href="index.html" class="btn">ወደ ዋናው ገጽ</a>
+  </header>
+
+  <div class="order-form">
+    <div id="selectedService"></div>
+    
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">ስም</label>
+        <input type="text" id="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">ስልክ ቁጥር</label>
+        <input type="tel" id="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="date">ቀን</label>
+        <input type="date" id="date" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="time">ሰዓት</label>
+        <input type="time" id="time" required>
+      </div>
+      
+      <button type="submit" class="btn">ትዕዛዝ አስገባ</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>ስልክ፡ 0932 985123 | CBE 1000580300352</p>
+    <p>የእንክብካቤ ባለቤት፡ ሀይማኖት መንግስት</p>
+  </footer>
+
+  <script src="order.js" type="module"></script>
+</body>
+</html>

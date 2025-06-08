@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ፀጉር ቤት</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ቃልኪዳን ፀጉር ቤት</h1>
+    <p>እንኳን በደህና መጡ!</p>
+    <input type="text" id="search" placeholder="አገልግሎት ፍለጋ...">
+    <button onclick = "goToSetOrder()" class="btn">ትዕዛዝ ለመስጠት</button>
+  </header>
+
+  <div class="service-list" id="serviceList">
+    <!-- JS will populate this -->
+  </div>
+
+  <footer class="main-footer">
+    <p>ስልክ፡ 0932 985123 | CBE 1000580300352</p>
+    <p>የእንክብካቤ ባለቤት፡ ሀይማኖት መንግስት</p>
+  </footer>
+
+  <nav class="fixed-footer">
+    <a href="#" class="footer-link">🏠 ዋና ገጽ</a>
+    <a href="orderList.html" class="footer-link">📝 ትዕዛዝ የተደረጉ</a>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
