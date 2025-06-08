@@ -1,3 +1,13 @@
+let phoneId = localStorage.getItem("phoneId");
+if(!phoneId) {
+    var letters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    phoneId = "";
+    for (var i = 0; i < 12; i++) {
+        phoneId += letters[Math.floor(Math.random() * 36)];
+    }  
+    localStorage.setItem("phoneId", phoneId);
+}
+
 let selectedService = [];
 const services = [
   { name: "ፓይስትራ", price: 200 },
