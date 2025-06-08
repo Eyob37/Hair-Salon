@@ -15,7 +15,7 @@ let phoneId = localStorage.getItem("phoneId");
         // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const gameRef = ref(database, "hairSalon/${phoneId}");
+const gameRef = ref(database, `hairSalon/${phoneId}`);
 
 document.addEventListener('DOMContentLoaded', () => {
    const selectedServices = JSON.parse(localStorage.getItem('selectedService'));  
