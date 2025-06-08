@@ -12,10 +12,16 @@ const firebaseConfig = {
 };
 
 let phoneId = localStorage.getItem("phoneId");
+var letters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var temporalId = "";
+for (var i = 0; i < 12; i++) {
+   temporalId += letters[Math.floor(Math.random() * 36)];
+}  
+    
         // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const gameRef = ref(database, `hairSalon/${phoneId}`);
+const gameRef = ref(database, `hairSalon/${phoneId}/${temporalId}`);
 
 document.addEventListener('DOMContentLoaded', () => {
    const selectedServices = JSON.parse(localStorage.getItem('selectedService'));  
